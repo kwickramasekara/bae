@@ -1,7 +1,7 @@
 const sass = require("sass");
 const fs = require("fs");
 
-// Default directories and filenames. Change if necessary
+// Default directories and filenames. Change if necessary.
 const SOURCE_DIR = "./_src";
 const OUTPUT_DIR = "./_build";
 const SCSS_DIR = "./_src/assets/scss";
@@ -35,7 +35,7 @@ module.exports = (eleventyConfig) => {
 
   // https://www.11ty.dev/docs/events/#beforebuild
   // beforeWatch doesnt run on stand-alone builds or the first time --serve is kicked off.
-  // Using a combination of both for performance
+  // Using a combination of both for performance.
   eleventyConfig
     .on("beforeBuild", () => {
       if (!firstBuildRan) {
