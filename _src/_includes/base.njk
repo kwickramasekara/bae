@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="{{ site.language }}" class="h-100">
+
+  <head>
+    {% block head -%}
+      {% include "partials/head.njk" -%}
+    {% endblock -%}
+
+    {% block jsHead %}
+      {% include "partials/js-head.njk" -%}
+    {% endblock %}
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    {% block header -%}
+      {% include "partials/header.njk" -%}
+    {% endblock -%}
+
+    <div class="container">
+      {{ content | safe }}
+    </div>
+
+    {% block footer %}
+      {% include "partials/footer.njk" -%}
+    {% endblock %}
+
+    {% block jsFooter %}
+      {% include "partials/js-footer.njk" -%}
+    {% endblock %}
+  </body>
+
+</html>

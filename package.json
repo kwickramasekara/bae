@@ -1,0 +1,31 @@
+{
+  "name": "bae",
+  "version": "1.0.0",
+  "description": "(E)leventy starter with (A)lpine.js and (B)ootstrap - BAE",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwickramasekara/bae.git"
+  },
+  "keywords": [
+    "eleventy",
+    "theme",
+    "starter"
+  ],
+  "author": "Keith Wickramasekara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwickramasekara/bae/issues"
+  },
+  "homepage": "https://github.com/kwickramasekara/bae#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "bootstrap": "^5.0.0-beta3",
+    "sass": "^1.32.8"
+  },
+  "prettier": {
+    "printWidth": 100
+  }
+}
